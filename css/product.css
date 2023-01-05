@@ -1,0 +1,153 @@
+#myModal {
+	display: none; /* 默認情況下，模态窗口不可見 */
+	position: fixed; /* 固定位置 */
+	z-index: 1; /* 在其他元素之上 */
+	padding-top: 100px; /* 內距（padding）頂部 */
+	left: 0;
+	top: 0;
+	width: 100%; /* 寬度滿屏 */
+	height: 100%; /* 高度滿屏 */
+/* 	overflow: auto; 如果內容超出可見範圍，則顯示滾動條 */
+	background-color: rgb(0, 0, 0); /* 背景顏色 */
+	background-color: rgba(0, 0, 0, 0.9); /* 透明度 */
+	object-fit: contain;
+}
+
+/* 在模态窗口上方的圖片 */
+.myImg {
+	flex: 1;		 /* 水平圖片 */
+/* 	border-radius: 5px; 圓角 */
+	cursor: pointer; /* 滑鼠游標形狀 */
+	transition: 0.3s; /* 漸變效果 */
+	max-width:300px; 
+	max-height:300px;
+	display: block;
+  	margin: 0 auto;
+}
+
+/* 滑鼠懸停在圖片上時的漸變效果 */
+.myImg:hover {
+	opacity: 0.7; /* 透明度 */
+}
+
+/* 模态窗口中的圖片 */
+#img01 {
+	width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 95%;
+}
+
+/* 模态窗口內容（包括圖片）的樣式 */
+/* .modal-content { */
+/* 	display: block; */
+/* 	width: 80%; 寬度 */
+/* 	max-width: 700px; 最大寬度 */
+/* 	margin: auto; 水平置中 */
+/* 	object-fit: contain; */
+/* } */
+
+/* 模态窗口的关閉按鈕 */
+.close {
+	/* 	position: absolute; 絕對位置 */
+	float: top;
+	top: 15px; /* 距離頂部的距離 */
+	right: 35px; /* 距離右側的距離 */
+	color: black; /* 文本顏色 */
+	font-size: 40px; /*字體大小 */
+	font-weight: bold; /*字體加粗 */
+	transition: 0.3s; /*漸變效果 */
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	height: 30px;
+}
+
+/* 滑鼠懸停在关閉按鈕上時的漸變效果 */
+.close:hover, .close:focus {
+	color: #bbb; /*文本顏色 */
+	text-decoration: none; /*去除下劃線 */
+	cursor: pointer; /*滑鼠游標形狀 */
+}
+
+/* 在模态窗口之外的內容，但在模态窗口之上的內容 */
+.modal {
+	display: none; /*默認情況下，模态窗口不可見 */
+	position: fixed; /*固定位置 */
+	z-index: 1; /*在其他元素之上 */
+	left: 0;
+	top: 0;
+	width: 100%; /*寬度滿屏 */
+	height: 100%; /*高度滿屏 */
+/* 	overflow: auto; 如果內容超出可見範圍，則顯示滾動條 */
+	background-color: rgb(0, 0, 0); /*背景顏色 */
+	background-color: rgba(0, 0, 0, 0.4); /*透明度 */
+	object-fit: contain;	
+}
+
+/* 在模态窗口之外的內容，但在模态窗口之上的內容的樣式 */
+.modal-content {
+	background-color: #fefefe; /*背景顏色 */
+	margin: 0 auto; /*外距（margin）上下左右 */
+	padding: 7px; /*內距（padding）上下左右 */
+	border: 1px solid #888; /*邊框 */
+	width: 80%; /*寬度 */
+	height: 90%;
+	width: max-content;
+/* 	max-width: 444px; 最大寬度 */
+}
+
+/* 在模态窗口之外的內容，但在模态窗口之上的內容的樣式 */
+/* .close { */
+/* 	color: #aaaaaa; 文本顏色 */
+/* 	float: right; 浮動方向 */
+/* 	font-size: 28px; 字體大小 */
+/* 	font-weight: bold; 字體加粗 */
+/* } */
+.close:hover, .close:focus {
+	color: #000; /* 文本顏色 */
+	text-decoration: none; /*去除下劃線 */
+	cursor: pointer; /*滑鼠游標形狀 */
+}
+
+/* 描述 */
+#caption {
+  /* 浮动在左侧 */
+  float: left;
+  /* 文本字體樣式 */
+  font-family: Arial, sans-serif;
+  /* 文本垂直置中 */
+  display: flex;
+  align-items: center;
+  /* 文本水平置中 */
+  justify-content: center;
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  flex-wrap: wrap;
+/*   flex-direction: row-reverse; */
+}
+
+@media (max-width: 768px) {
+  .imgContainer {
+    justify-content: center;
+  }
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+/*   position: absolute; */
+  padding-left: 5px;
+  top: -23px;
+  left: 0;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+}
+
