@@ -29,7 +29,9 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   
-  --cust-green: #28a745;
+  --cust-green: #333;
+/*   --cust-green: #d03636; */
+/*   --cust-green: #E60315; 旺裕紅*/
 }
 *,
 *::before,
@@ -70,7 +72,8 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem; 
+  font-weight: bold !important; /* 字體粗細 */}
 
 p {
   margin-top: 0;
@@ -294,6 +297,7 @@ template {
   display: none !important; }
 
 .container {
+/*   font-weight: 900; */
   width: 100%;
   padding-right: 10px;
   padding-left: 10px;
@@ -5570,7 +5574,7 @@ ol {
   @media (min-width: 576px) {
     .logo {
       display: block;
-      width: 120px; } }
+      width: 340px; } }/*首頁logo大小 */
   .logo img {
     width: 100%;
     height: auto; }
@@ -5762,7 +5766,7 @@ ul.social {
   transition: all 0.15s ease; }
   .button:hover {
     color: #fff;
-    background-color: #0c310c;
+    background-color: #E60315;/*旺裕紅*/
     text-decoration: none; }
 
 .button-white {
@@ -6105,7 +6109,8 @@ html {
     flex: 1; }
     .service-summary .service-content .service-title {
       font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      }
     .service-summary .service-content p {
       color: #666;
       font-size: 0.9rem;
@@ -6156,5 +6161,9 @@ html {
   /* Masonry bricks or child elements */
   background-color: #eee;
   margin: 0 0 1em; }
+
+#home {
+	background-color: #333 !important;
+}
 
 /*# sourceMappingURL=style.css.map */
