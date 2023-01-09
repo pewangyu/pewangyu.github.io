@@ -30,8 +30,8 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   
   --cust-green: #333;
+  --cust-red: #E60315; /* 旺裕紅*/
 /*   --cust-green: #d03636; */
-/*   --cust-green: #E60315; 旺裕紅*/
 }
 *,
 *::before,
@@ -5585,7 +5585,7 @@ ol {
 
 .logo-mobile {
   display: block;
-  width: 40px;
+  width: 80px;
   padding: 10px 0 10px 0; }
   @media (min-width: 576px) {
     .logo-mobile {
@@ -5616,18 +5616,18 @@ ol {
         font-weight: regular;
         text-transform: uppercase;
         text-decoration: none;
-        color: var(--cust-green); }
+        color: var(--cust-red); }
         .main-menu > ul > li > a:hover {
-          background: var(--cust-green);
+          background: var(--cust-red);
           color: #ffffff;
           text-decoration: none; }
       .main-menu > ul > li.active > a {
-        background: var(--cust-green);
+        background: var(--cust-red);
         text-decoration: none;
         color: #ffffff; }
         .main-menu > ul > li.active > a:hover {
           text-decoration: none;
-          background: var(--cust-green);
+          background: var(--cust-red);
           transition: all 225ms ease-in 0s;
           color: #ffffff; }
 
