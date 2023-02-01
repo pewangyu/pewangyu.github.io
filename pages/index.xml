@@ -5,17 +5,8 @@
     <link>https://wonyuebag.com/pages/</link>
     <description>Recent content in Pages on 旺裕股份有限公司-台中客製塑膠袋製造商</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-tw</language>
     <lastBuildDate>Thu, 06 Dec 2018 09:29:16 +1000</lastBuildDate><atom:link href="https://wonyuebag.com/pages/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://wonyuebag.com/about/</link>
-      <pubDate>Thu, 06 Dec 2018 09:29:16 +1000</pubDate>
-      
-      <guid>https://wonyuebag.com/about/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>History</title>
       <link>https://wonyuebag.com/history/</link>
@@ -23,6 +14,15 @@
       
       <guid>https://wonyuebag.com/history/</guid>
       <description>About Heading Theres no limits, Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.</description>
+    </item>
+    
+    <item>
+      <title>關於我們</title>
+      <link>https://wonyuebag.com/about/</link>
+      <pubDate>Thu, 06 Dec 2018 09:29:16 +1000</pubDate>
+      
+      <guid>https://wonyuebag.com/about/</guid>
+      <description></description>
     </item>
     
   </channel>
