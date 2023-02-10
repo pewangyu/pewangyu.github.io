@@ -94,115 +94,132 @@
 </div>
     
 <div class="intro intro-small">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>聯絡我們</h1>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>聯絡我們</h1>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-12 col-md-8">
-      <p>我們為所有客戶提供免費諮詢。</p>
+	<div class="row">
+		<div class="col-12 col-md-8">
+			<p>我們為所有客戶提供免費諮詢。</p>
 
-      <ul>
-        
-        <li><strong>電話: </strong>04-22627656 </li>
-        
-        
-        <li><strong>傳真: </strong>04-22627657</li>
-        <li><strong>信箱: </strong><a href="mailto:won.yue@msa.hinet.net">
-            won.yue@msa.hinet.net</a></li>
-        
-		<li><strong>聯絡人: </strong>阮先生</li>        
-        
-        <li style="white-space: pre-wrap;"><strong>地址: </strong>台中市南區建國南路一段86號
-</li>
-        
-      </ul>
-      
-      <h4 class="mt-4">營業時間</h4>
-      <table class="table table-sm opening-hours-table">
-        
-        <tr>
-          <td class="day font-weight-bold">星期一</td>
-          <td class="opens">早上8:00~12:00，下午13:00~17:00</td>
-
-
-        </tr>
-        
-        <tr>
-          <td class="day font-weight-bold">星期二</td>
-          <td class="opens">早上8:00~12:00，下午13:00~17:00</td>
-
-
-        </tr>
-        
-        <tr>
-          <td class="day font-weight-bold">星期三</td>
-          <td class="opens">早上8:00~12:00，下午13:00~17:00</td>
-
-
-        </tr>
-        
-        <tr>
-          <td class="day font-weight-bold">星期四</td>
-          <td class="opens">早上8:00~12:00，下午13:00~17:00</td>
-
-
-        </tr>
-        
-        <tr>
-          <td class="day font-weight-bold">星期五</td>
-          <td class="opens">早上8:00~12:00，下午13:00~17:00</td>
-
-
-        </tr>
-        
-        <tr>
-          <td class="day font-weight-bold">星期六</td>
-          <td class="opens">休息</td>
-
-
-        </tr>
-        
-        <tr>
-          <td class="day font-weight-bold">星期日</td>
-          <td class="opens">休息</td>
-
-
-        </tr>
-        
-      </table>
-      
-    </div>
-  </div>
-
+			<ul>
+				
+				<li><strong>電話: </strong>04-22627656 </li>  
+				<li><strong>傳真: </strong>04-22627657</li>
+				<li><strong>信箱: </strong><a
+					href="mailto:won.yue@msa.hinet.net"> won.yue@msa.hinet.net</a></li> 
+				<li><strong>聯絡人: </strong>阮先生</li> 
+				<li style="white-space: pre-wrap;"><strong>地址: </strong>台中市南區建國南路一段86號
+</li> 
+			</ul>
+			
+			<h4 class="mt-4">營業時間</h4>
+			<table class="table table-sm opening-hours-table">
+				
+				<tr>
+					<td class="day font-weight-bold">星期一</td>
+					<td class="opens">早上8:00~12:00，下午13:00~17:00</td>
+					
+					
+				</tr>
+				
+				<tr>
+					<td class="day font-weight-bold">星期二</td>
+					<td class="opens">早上8:00~12:00，下午13:00~17:00</td>
+					
+					
+				</tr>
+				
+				<tr>
+					<td class="day font-weight-bold">星期三</td>
+					<td class="opens">早上8:00~12:00，下午13:00~17:00</td>
+					
+					
+				</tr>
+				
+				<tr>
+					<td class="day font-weight-bold">星期四</td>
+					<td class="opens">早上8:00~12:00，下午13:00~17:00</td>
+					
+					
+				</tr>
+				
+				<tr>
+					<td class="day font-weight-bold">星期五</td>
+					<td class="opens">早上8:00~12:00，下午13:00~17:00</td>
+					
+					
+				</tr>
+				
+				<tr>
+					<td class="day font-weight-bold">星期六</td>
+					<td class="opens">休息</td>
+					
+					
+				</tr>
+				
+				<tr>
+					<td class="day font-weight-bold">星期日</td>
+					<td class="opens">休息</td>
+					
+					
+				</tr>
+				
+			</table>
+			
+		</div>
+	</div>
+	<div id="map" style="width: 95%; height: 70vh; margin-bottom: 20px;"></div>
 </div>
 
 <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCvGMy3HPC93imXcLO4ATBJD59T1jMtKA&callback=initMap">
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCvGMy3HPC93imXcLO4ATBJD59T1jMtKA&callback=initMap">
 </script>
 <script>
 function initMap() {
 	const myLatLng = { lat: 24.118824906424404, lng: 120.64829453473918 };
 	const map = new google.maps.Map(document.getElementById("map"), {
-		animation: google.maps.Animation.DROP, 
-		center: myLatLng,
-		zoom: 18
-	});
-	 new google.maps.Marker({
-		 	position: myLatLng, map
-	});
-	  const infowindow = new google.maps.InfoWindow({
-		    content: "<p>Marker Location:" + marker.getPosition() + "</p>",
-		  });
 
-		  google.maps.event.addListener(marker, "click", () => {
-		    infowindow.open(map, marker);
-		  });
+		center: myLatLng,
+		zoom: 17,
+		  styles: [
+		      {
+		          featureType: 'transit', 
+		          elementType: 'labels.icon',
+		          stylers: [{ visibility: 'on' }]
+		      },
+		      {
+		          featureType: 'poi', 
+		          stylers: [{ visibility: 'on' }]
+		      },
+		      {
+		          featureType: 'road',  
+		          stylers: [{ visibility: 'on' }]
+		      },
+		  ]
+	});
+	const marker = new google.maps.Marker({
+	 	position: myLatLng, map,
+	 	title:"旺裕股份有限公司"
+	});
+	
+	var contentString = '<h5 style="color:red">旺裕股份有限公司</h5><p>台灣台中市南區建國南路一段86號</p><a style="color:blue" href="#" onclick="window.open(\'https://maps.google.com/maps?ll=24.118473,120.648371&z=19&t=m&hl=zh-TW&gl=US&mapclient=apiv3&cid=7468413848403401317\', \'_blank\')">在 Google 地圖上查看</a>';
+
+	const infowindow = new google.maps.InfoWindow({
+		content: contentString,
+	    position : { lat: 25.118824906424404, lng: 120.69829453473918 }
+    });
+ 
+	infowindow.open(map, marker);
+	  
+	marker.addListener("click", function() {
+		infowindow.open(map, marker);
+	});
 }
 initMap();
 </script>
