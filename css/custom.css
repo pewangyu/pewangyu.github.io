@@ -6005,9 +6005,11 @@ ul.social {
 .hero-image {
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: overlay;
+/*   background-attachment: fixed; */
+  background-position: right;
+/*   background-blend-mode: overlay; */
   background-color: rgba(0, 0, 0, 0.5);
-  height: 400px;
+/*   height: 400px; */
   position: relative;
   padding-top: 60px; }
   .hero-image .container {
@@ -6189,6 +6191,44 @@ html {
     border: 2px solid #333;
     color: #333;
     background-color: white;
+}
+
+/* 首頁banner */
+
+#wonyue-banner{
+	  height: 540px;
+	  background-size: cover !important;
+  	  background-repeat: no-repeat !important;
+/* 	  background-attachment: fixed !important; */
+  	  background-position: right !important;
+	  background: url(/images/banner_1.jpg);
+	}
+@media (max-width: 1440px) {
+	#wonyue-banner{
+	  background-size: cover !important;
+  	  background-repeat: no-repeat !important;
+/* 	  background-attachment: fixed !important; */
+	  background-position: right !important;
+	  background: url(/images/banner_1.jpg);
+	}
+}
+@media (max-width: 720px) {
+	#wonyue-banner{
+	  background-size: cover !important;
+  	  background-repeat: no-repeat !important;
+/* 	  background-attachment: fixed !important; */
+	  background-position: right !important;
+	  background: url(/images/banner_2.jpg);
+	}
+}
+@media (max-width: 576px) {
+	#wonyue-banner{
+ background-size: cover !important;
+  	  background-repeat: no-repeat !important;
+/* 	  background-attachment: fixed !important; */
+	  background-position: right !important;
+	  background: url(/images/banner_3.jpg);
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
