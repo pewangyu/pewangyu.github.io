@@ -4,8 +4,8 @@ var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
-// 獲取所有圖片
-var images = document.getElementsByTagName("img");
+// 獲取所有圖片(僅限商品縮圖，避免誤觸 header logo 等其他圖片)
+var images = document.getElementsByClassName("myImg");
 // 遍歷所有圖片
 for (var i = 0; i < images.length; i++) {
 	var img = images[i];
